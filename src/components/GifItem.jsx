@@ -1,4 +1,6 @@
 
+import PropTypes from 'prop-types';
+
 export const GifItem = ({id,url,title}) => {
     
   return (
@@ -7,4 +9,9 @@ export const GifItem = ({id,url,title}) => {
         <p>{ title }</p>
     </div>
   )
+}
+
+GifItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
